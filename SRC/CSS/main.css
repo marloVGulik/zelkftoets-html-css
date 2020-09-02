@@ -1,40 +1,63 @@
 * {
-    color: #FFFFFF;
+    color: #90D9E8;
+    text-shadow: 0 0 20px #90D9E8;
 }
 
 html {
     height: 100vh;
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../Images/background.jpg");
     background-repeat: no-repeat;
+    background-attachment: fixed;
     background-size: 100% 100%;
+}
+
+img {
+    max-width: 100%;
 }
 
 #backgroundimage {
     position: sticky;
     left: 0;
     top: 0;
-    height: 100vh;
-    width: 100vw;
+    height: 100%;
+    width: 100%;
     z-index: -100;
+}
+
+
+p {
+    color: #5482E3;
 }
 
 body {
     z-index: 1;
     padding: 0;
     margin: 0;
-    /* overflow: hidden; */
 }
 
 #main {
+    position: relative;
+    top: 0;
     width: 1000px;
     margin: auto;
+    display: flex;
+    justify-content: space-between;
 }
 
+/* Header */
 #header {
     padding: 1rem 0;
-    width: 100vw;
+    width: 100%;
 }
-#header>div {
+#header>div.links {
+    background-color: #00000055;
+    margin: 2rem auto;
+    padding: 0.5rem 0;
+    border: 1px solid #555555;
+    border-left: none;
+    border-right: none;
+}
+#header>div.banner {
     width: 100%;
     background-color: #000000;
 }
@@ -45,22 +68,18 @@ body {
     height: 150px;
     background: radial-gradient(circle at center, #FFFFFF, #FFFFFF15);
 }
-#header>ul {
-    margin: 2rem auto;
-    /* width: 1000px; */
-    padding: 0.5rem 0;
+#header>div>ul {
+    margin: auto;
+    padding: 0;
+    width: 1000px;
     list-style-type: none;
-    background-color: #00000055;
     display: flex;
     justify-content: space-around;
-    border: 1px solid #555555;
-    border-left: none;
-    border-right: none;
 }
-#header>ul>li {
+#header>div>ul>li {
     display: inline-block;
 }
-#header>ul>li>a {
+#header>div>ul>li>a {
     text-decoration: none;
     display: block;
     border: 1px solid #21b3d2;
@@ -69,7 +88,21 @@ body {
     padding: 1rem 2rem;
     transition: 0.3s linear;
 }
-#header>ul>li>a:hover, #header>ul>li>a.active {
+#header>div>ul>li>a:hover, #header>div>ul>li>a.active {
     border: 1px solid #b7e117;
     background-color: #b7e11715;
+    text-shadow: 0 0 8px #b7e117;
+    color: #b7e117;
 }
+
+
+/* The rest */
+.half {
+    width: 45%;
+}
+.imagesp1 {
+    width: 420px;
+    height: 200px;
+}
+
+
