@@ -12,7 +12,9 @@ html {
 }
 
 img {
+    margin: auto;
     max-width: 100%;
+    display: inline-flex;
 }
 
 #backgroundimage {
@@ -96,6 +98,20 @@ body {
     color: #b7e117;
 }
 
+/* Footer */
+#footer {
+    position: sticky;
+    bottom: 0;
+    width: 100%;
+    border-top: 1px solid #21b3d2;
+    background-color: #00000055;
+    text-align: center;
+    padding: 1rem 0;
+    margin: 1rem 0 0 0;
+}
+#footer>p {
+    margin: 0;
+}
 
 /* The rest */
 .half {
@@ -146,4 +162,27 @@ body {
 }
 .textbox>h2 {
     background-color: #00000080;
+}
+
+
+.topimage {
+    width: 300px;
+    height: 100px;
+}
+.topimage2 {
+    width: 360px;
+    height: 100px;    
+}
+.leftimage {
+    width: 540px;
+    height: 380px;
+}
+.middleimage {
+    display: block;
+    width: 120px;
+    height: 190px;
+}
+.rightimage {
+    width: 300px;
+    height: 380px;
 }
